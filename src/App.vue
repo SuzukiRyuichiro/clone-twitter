@@ -1,10 +1,20 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
   </div>
-  <router-view/>
 </template>
+
+<script>
+  export default {
+    name: 'app',
+    components: {
+    },
+    data() {
+      return {
+
+      }
+    },
+  }
+</script>
 
 <style>
 #app {
