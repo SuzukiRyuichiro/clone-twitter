@@ -2,9 +2,15 @@
   <div id="app" class="flex container h-screen w-full">
     <!-- side nav -->
     <div class="w-1/5 border-r border-lighter px-8 py-2">
-      <button class="h-12 w-12 hover:bg-lightblue text-3xl text-blue">
-        <font-awesome-icon icon="user-secret" />
+      <button class="h-12 w-12 hover:bg-lightblue text-3xl text-blue rounded-full">
+        <font-awesome-icon :icon="['fab', 'twitter']" />
       </button>
+      <div>
+        <button v-for="tab in tabs" class="flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto">
+          <font-awesome-icon :icon="tab.icon" />
+          <p>{{ tab.title }}</p>
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -12,11 +18,13 @@
 <script>
   export default {
     name: 'app',
-    components: {
-    },
+    components: {},
     data() {
       return {
-
+        tabs: [
+          {icon: 'user-secret', title: 'Secret', id: 'secret'},
+          {icon: 'home', title: 'Home', id: 'home'}
+        ]
       }
     },
   }
@@ -24,23 +32,23 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
 
-#nav {
-  padding: 30px;
-}
+  #nav {
+    padding: 30px;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
 </style>

@@ -4,10 +4,14 @@ import router from './router'
 import './assets/tailwind.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faUserSecret)
+library.add(faTwitter)
+library.add(faHome, faUserSecret)
 
 const app = createApp(App)
 app.component('font-awesome-icon', FontAwesomeIcon)
