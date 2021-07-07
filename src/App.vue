@@ -1,30 +1,22 @@
 <template>
   <div id="app" class="flex container h-screen w-full">
     <!-- side nav -->
-    <div class="w-1/5 border-r border-lighter px-8 py-2">
-      <button class="h-12 w-12 hover:bg-lightblue text-3xl text-blue rounded-full">
-        <font-awesome-icon :icon="['fab', 'twitter']" />
-      </button>
-      <div>
-        <button v-for="tab in tabs" class="flex items-center py-2 px-4 hover:bg-lightblue rounded-full mr-auto">
-          <font-awesome-icon :icon="tab.icon" />
-          <p>{{ tab.title }}</p>
-        </button>
-      </div>
-    </div>
+    <SideNav />
   </div>
 </template>
 
 <script>
+  // importing components
+  import SideNav from './components/SideNav'
+
   export default {
     name: 'app',
-    components: {},
+    components: {
+      SideNav
+    },
     data() {
       return {
-        tabs: [
-          {icon: 'user-secret', title: 'Secret', id: 'secret'},
-          {icon: 'home', title: 'Home', id: 'home'}
-        ]
+
       }
     },
   }
