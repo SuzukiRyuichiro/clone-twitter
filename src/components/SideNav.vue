@@ -12,29 +12,36 @@
         <p class="text-lg font-semibold text-left">{{ tab.title }}</p>
       </button>
     </div>
+    <TweetButton />
   </div>
 </template>
 
 <script>
-export default {
+  import TweetButton from './TweetButton';
 
-  name: 'SideNav',
+  export default {
 
-  data () {
-    return {
-      tabs: [
-        {icon: 'user-secret', title: 'Secret', id: 'secret'},
-        {icon: 'home', title: 'Home', id: 'home'},
-        {icon: 'bell', title: 'Notification', id: 'notification'},
-        {icon: 'hashtag', title: 'Explore', id: 'explore'},
-        {icon: 'envelope', title: 'Messages', id: 'messages'},
-        {icon: 'bookmark', title: 'Bookmarks', id: 'bookmarks'},
-        {icon: 'user', title: 'Profile', id: 'profile'},
-      ],
-      selectedId: 'home'
+    name: 'SideNav',
+
+    components: {
+      TweetButton
+    },
+
+    data () {
+      return {
+        tabs: [
+          {icon: 'home', title: 'Home', id: 'home'},
+          {icon: 'bell', title: 'Notification', id: 'notification'},
+          {icon: 'hashtag', title: 'Explore', id: 'explore'},
+          {icon: 'envelope', title: 'Messages', id: 'messages'},
+          {icon: 'bookmark', title: 'Bookmarks', id: 'bookmarks'},
+          {icon: 'user', title: 'Profile', id: 'profile'},
+          {icon: 'user-secret', title: 'Secret', id: 'secret'},
+        ],
+        selectedId: 'home'
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
