@@ -6,7 +6,7 @@
     </button>
     <!-- actual side nav -->
     <div>
-      <button v-for="tab in tabs" class="flex items-center py-2 px-4 mb-3 hover:bg-lightblue rounded-full mr-auto hover:text-blue">
+      <button v-for="tab in tabs" @click="selectedId = tab.id" :class="['flex', 'items-center', 'py-2', 'px-4', 'mb-3', 'hover:bg-lightblue', 'rounded-full', 'mr-auto', 'hover:text-blue', tab.id === selectedId ? 'text-blue' : '']">
         <!-- icon and text for each menu item -->
         <font-awesome-icon :icon="tab.icon" class="text-2xl mr-4 text-left" />
         <p class="text-lg font-semibold text-left">{{ tab.title }}</p>
@@ -30,7 +30,8 @@ export default {
         {icon: 'envelope', title: 'Messages', id: 'messages'},
         {icon: 'bookmark', title: 'Bookmarks', id: 'bookmarks'},
         {icon: 'user', title: 'Profile', id: 'profile'},
-      ]
+      ],
+      selectedId: 'home'
     }
   }
 }
