@@ -16,13 +16,17 @@
       <TweetButton />
     </div>
     <!-- drop down with username and avatar (bottom) -->
-    <AvatarAndUsername />
+    <div class="w-full relative">
+      <AvatarAndUsername @click="dropdown = true" />
+      <DropDown v-if="dropdown" @click="dropdown = false" />
+    </div>
   </div>
 </template>
 
 <script>
   import TweetButton from './TweetButton';
   import AvatarAndUsername from './AvatarAndUsername';
+  import DropDown from './DropDown';
 
   export default {
 
@@ -30,7 +34,8 @@
 
     components: {
       TweetButton,
-      AvatarAndUsername
+      AvatarAndUsername,
+      DropDown
     },
 
     data () {
@@ -44,7 +49,8 @@
           {icon: 'user', title: 'Profile', id: 'profile'},
           {icon: 'user-secret', title: 'Secret', id: 'secret'},
         ],
-        selectedId: 'home'
+        selectedId: 'home',
+        dropdown: false,
       }
     }
   }
