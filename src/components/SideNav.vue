@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/5 border-r border-lighter px-8 py-2 flex flex-col justify-between">
+  <div class="lg:w-1/5 border-r border-lighter px-2 lg:px-8 py-2 flex flex-col justify-between">
     <!-- upper half of side nav -->
     <div class="text-left">
       <!-- twitter logo -->
@@ -10,7 +10,7 @@
       <button v-for="tab in tabs" @click="selectedId = tab.id" :class="['flex', 'items-center', 'py-2', 'px-4', 'mb-3', 'hover:bg-lightblue', 'rounded-full', 'mr-auto', 'hover:text-blue', tab.id === selectedId ? 'text-blue' : '']">
         <!-- icon and text for each menu item -->
         <font-awesome-icon :icon="tab.icon" class="text-2xl mr-4 text-left" />
-        <p class="text-lg font-semibold text-left">{{ tab.title }}</p>
+        <p class="text-lg font-semibold text-left md:visible invisible">{{ tab.title }}</p>
       </button>
       <!-- button that says tweet -->
       <TweetButton />
