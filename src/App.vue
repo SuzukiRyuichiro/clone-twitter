@@ -2,17 +2,22 @@
   <div id="app" class="flex container h-screen w-full">
     <!-- side nav -->
     <SideNav />
+    <!-- Tweets -->
+    <TweetsList />
+    <!-- Trending -->
   </div>
 </template>
 
 <script>
   // importing components
-  import SideNav from './components/SideNav'
+  import SideNav from './components/SideNav';
+  import TweetsList from './components/TweetsList';
 
   export default {
     name: 'app',
     components: {
-      SideNav
+      SideNav,
+      TweetsList,
     },
     data() {
       return {
