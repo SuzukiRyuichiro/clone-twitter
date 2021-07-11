@@ -1,10 +1,22 @@
 <template>
-  <div class="w-1/3 h-full border-l border-lighter px-6 py-2 overflow-y-scroll">
-    <!-- search bar -->
-    <div class="relative">
-      <input type="text" placeholder="Search Twitter" class="rounded-full w-full p-2 pl-10 bg-lighter text-sm">
-      <font-awesome-icon icon="search" class="absolute left-4 top-2.5 text-sm text-light" />
+  <div class="w-full rounded-lg bg-lightest">
+    <div class="flex items-center justify-between p-3">
+      <p class="text-lg font-bold">What’s happening</p>
+      <i class="fas fa-cog text-lg text-blue"></i>
     </div>
+    <button v-for="trend in trending" class="w-full flex justify-between hover:bg-lighter p-3 border-t border-lighter">
+      <div>
+        <p class="text-xs text-left leading-tight text-dark"> {{ trend.top }} </p>
+        <p class="font-semibold text-sm text-left leading-tight"> {{ trend.title }} </p>
+        <p class="text-left text-sm leading-tight text-dark"> {{ trend.bottom }} </p>
+      </div>
+      <button class="rounded-full hover:bg-light hover:text-blue h-8 w-8">
+        <font-awesome-icon icon="ellipsis-h" class="text-sm text-dark" />
+      </button>
+    </button>
+    <button class="p-3 w-full hover:bg-lighter text-left text-blue border-t border-lighter">
+      Show More
+    </button>
   </div>
 </template>
 
@@ -15,7 +27,13 @@ export default {
 
   data () {
     return {
-
+      trending: [
+        {top: 'Trending in Meguro', title: 'Hungry Heaven', bottom: 'Trending with: Hungry Heaven price increase'},
+        {top: 'Vue', title: 'Vue is nice', bottom: '19k Tweets'},
+        {top: 'Code', title: 'Le Wagon Tokyo', bottom: '5 tweets'},
+        {top: 'Trending in Japan', title: 'Olympic', bottom: '400k tweets'},
+        {top: 'Trending', title: 'Englang vs Italy', bottom: '24k tweets'},
+      ],
     }
   }
 }

@@ -5,7 +5,7 @@
       <p class="text-sm font-bold leading-tight">Trouni Tiet</p>
       <p class="text-sm leading-tight">@Trouni</p>
     </div>
-    <font-awesome-icon icon="angle-down" class="ml-auto text-lg lg:block hidden" />
+    <font-awesome-icon icon="ellipsis-h" class="ml-auto text-lg lg:block hidden" />
   </button>
 </template>
 

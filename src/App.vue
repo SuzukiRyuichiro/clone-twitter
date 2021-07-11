@@ -4,8 +4,8 @@
     <SideNav />
     <!-- Tweets -->
     <TweetsList />
-    <!-- Trending -->
-    <Trending />
+    <!-- SidebarColumn (search, trending and suggestion)-->
+    <SidebarColumn />
   </div>
 </template>
 
@@ -13,14 +13,14 @@
   // importing components
   import SideNav from './components/SideNav';
   import TweetsList from './components/TweetsList';
-  import Trending from './components/Trending';
+  import SidebarColumn from './components/SidebarColumn';
 
   export default {
     name: 'app',
     components: {
       SideNav,
       TweetsList,
-      Trending,
+      SidebarColumn,
     },
     data() {
       return {

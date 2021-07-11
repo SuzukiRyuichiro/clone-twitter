@@ -40,6 +40,7 @@
 
     data () {
       return {
+        // icons and names for the side nav items
         tabs: [
           {icon: 'home', title: 'Home', id: 'home'},
           {icon: 'bell', title: 'Notification', id: 'notification'},
@@ -49,7 +50,9 @@
           {icon: 'user', title: 'Profile', id: 'profile'},
           {icon: 'user-secret', title: 'Secret', id: 'secret'},
         ],
+        // selected menu item
         selectedId: 'home',
+        // dropdown from username and avatar component
         dropdown: false,
       }
     }
