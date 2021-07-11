@@ -4,18 +4,22 @@
     <SearchBar />
     <!-- Trend -->
     <Trending />
+    <!-- Follower suggestinos -->
+    <WhoToFollow />
   </div>
 </template>
 
 <script>
   import SearchBar from './SearchBar';
   import Trending from './Trending';
+  import WhoToFollow from './WhoToFollow';
 
   export default {
 
     components: {
       SearchBar,
       Trending,
+      WhoToFollow,
     },
 
     name: 'SidebarColumn',

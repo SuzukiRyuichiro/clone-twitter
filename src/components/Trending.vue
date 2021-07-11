@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full rounded-lg bg-lightest">
+  <div class="w-full rounded-lg bg-lightest mb-3">
     <div class="flex items-center justify-between p-3">
       <p class="text-lg font-bold">What’s happening</p>
       <i class="fas fa-cog text-lg text-blue"></i>
