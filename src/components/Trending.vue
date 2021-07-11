@@ -4,17 +4,17 @@
       <p class="text-lg font-bold">What’s happening</p>
       <i class="fas fa-cog text-lg text-blue"></i>
     </div>
-    <button v-for="trend in trending" class="w-full flex justify-between transition hover:bg-lighter p-3 border-t border-lighter">
+    <button v-for="trend in trending" class="w-full flex justify-between duration-75 transition hover:bg-lighter p-3 border-t border-lighter">
       <div>
         <p class="text-xs text-left leading-tight text-dark"> {{ trend.top }} </p>
         <p class="font-semibold text-sm text-left leading-tight"> {{ trend.title }} </p>
         <p class="text-left text-sm leading-tight text-dark"> {{ trend.bottom }} </p>
       </div>
-      <button class="rounded-full transition hover:bg-light hover:text-blue h-8 w-8">
+      <button class="rounded-full duration-75 transition hover:bg-light hover:text-blue h-8 w-8">
         <font-awesome-icon icon="ellipsis-h" class="text-sm text-dark" />
       </button>
     </button>
-    <button class="p-3 w-full transition hover:bg-lighter text-left text-blue border-t border-lighter">
+    <button class="p-3 w-full duration-75 transition hover:bg-lighter text-left text-blue border-t border-lighter">
       Show More
     </button>
   </div>
