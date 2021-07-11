@@ -3,11 +3,11 @@
     <!-- upper half of side nav -->
     <div class="lg:text-left text-center">
       <!-- twitter logo -->
-      <button class="h-12 w-12 lg:ml-2 hover:bg-lightblue text-3xl text-blue rounded-full">
+      <button class="h-12 w-12 lg:ml-2 transition hover:bg-lightblue text-3xl text-blue rounded-full">
         <font-awesome-icon :icon="['fab', 'twitter']" />
       </button>
       <!-- menu -->
-      <button v-for="tab in tabs" @click="selectedId = tab.id" :class="[tab.id === selectedId ? 'text-blue' : '', 'flex', 'items-center', 'py-2', 'px-4', 'mb-3', 'hover:bg-lightblue', 'rounded-full', 'lg:mr-auto', 'hover:text-blue']">
+      <button v-for="tab in tabs" @click="selectedId = tab.id" :class="[tab.id === selectedId ? 'text-blue' : '', 'flex', 'items-center', 'py-2', 'px-4', 'mb-3', 'transition', 'hover:bg-lightblue', 'rounded-full', 'lg:mr-auto', 'hover:text-blue']">
         <!-- icon and text for each menu item -->
         <font-awesome-icon :icon="tab.icon" class="text-2xl lg:mr-4" />
         <p class="text-lg font-semibold text-left lg:block hidden">{{ tab.title }}</p>
