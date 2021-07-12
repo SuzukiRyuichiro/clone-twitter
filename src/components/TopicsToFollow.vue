@@ -8,12 +8,12 @@
     <button v-for="topic in topics" class="w-full flex items-center justify-between duration-75 transition hover:bg-lighter p-3 border-t border-lighter">
       <div class="flex items-center">
         <div class="ml-2">
-          <p class="font-semibold text-sm text-left leading-tight"> {{ topic.title }} </p>
+          <p class="font-semibold text-sm text-left leading-tight hover:underline"> {{ topic.title }} </p>
           <p class="text-left text-sm leading-tight text-dark"> {{ topic.genre }} </p>
         </div>
       </div>
         <!-- button for follow -->
-      <button class="rounded-full duration-75 transition border border-blue hover:bg-gray-300 px-2 py-1">
+      <button class="ml-auto text-sm text-blue py-1 px-4 rounded-full border border-blue duration-75 transition hover:bg-gray-300">
         Follow
       </button>
     </button>
