@@ -91,7 +91,7 @@ export default {
         {
           displayname: 'Yann Klein',
           username: '@yann',
-          avatarUrl: 'https://lh3.googleusercontent.com/EJB-ldK9kNtuS1X29b9Dkx8W3OwUardaSZFbJq5pD091Uomdj9CqPgCaNcZD-esP4xg5Pi4INVkopsrLyAGclIKm1DbxMvdIrCzmz5w6D0c_ifUbLLwlPTRZDiSSg76qpOKu5hQTikMvI_NzaozMiLyNx9g6LTstTFU2YBMQdQcFWa2dkXmIjpMDsE-mQ6BgQX8dIHpVbHlXW5QKs_LzZUDSu_1Zu5zxgb3SDfXyR2bQeEDALem_qSxONMtK_D9ocSbihc1Upp6gFvrrvigLY2Qhk4N_w38n7SOxkRKRKER7UZZQ54FsPBqp9xpiOGnv9lyN5HUMaLZZcM8zKuVa3z_DjseA4Q0QK0ufxG_cLsJKcIjC2L2QQM6njaDAbDf-NbUkmJvAqapzIJA2yZ73__WPwyJIIdFKX9vYAyoNkAeA3W3R0t8t8WYvn9DN6yU8vVWpge2rEZVt3E7H2YQ1KbNwjsniTZFiWQxiOJCQZ_jB1VtKxHbZSgTJopZdqrafwPN7MDz2c6XkhvVogMtP7oiHhOc-_wXxxbGzx3sU537pVf1h6XDPOjADlAGPvvB6hZKRLDimgF0AFOjbSuoD4G7j3qyVdm17mOQpPeJ_VCjWTrE-k5ONojdF4lulvWiGPCooxpi-TDYks24ytOe4N2WTb5bCmbEik5s3kCUSySIWUPdUwKTFBjpb8TGsLbIh-fvnjseInwkzobrksCiFjYf8=w942-h1392-no?authuser=0',
+          avatarUrl: 'https://raw.githubusercontent.com/SuzukiRyuichiro/clone-twitter/master/src/assets/pictures/yann.JPG',
           time: '1.4h',
           content: 'Never gonna give you up Never gonna let you down Never gonna run around and desert you Never gonna make you cry Never gonna say goodbye Never gonna tell a lie and hurt you',
           commentCount: 10,
