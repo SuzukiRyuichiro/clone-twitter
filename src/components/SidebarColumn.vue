@@ -6,6 +6,8 @@
     <Trending />
     <!-- Follower suggestinos -->
     <WhoToFollow />
+    <!-- Topics to Follow -->
+    <TopicsToFollow />
   </div>
 </template>
 
@@ -13,6 +15,7 @@
   import SearchBar from './SearchBar';
   import Trending from './Trending';
   import WhoToFollow from './WhoToFollow';
+  import TopicsToFollow from './TopicsToFollow';
 
   export default {
 
@@ -20,6 +23,7 @@
       SearchBar,
       Trending,
       WhoToFollow,
+      TopicsToFollow,
     },
 
     name: 'SidebarColumn',

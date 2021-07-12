@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full rounded-lg bg-lightest">
+  <div class="w-full rounded-lg bg-lightest mb-3">
     <div class="flex items-center justify-between p-3">
       <p class="text-lg font-bold">Who to follow</p>
       <i class="fas fa-cog text-lg text-blue"></i>
@@ -8,7 +8,7 @@
     <button v-for="user in users" class="w-full flex items-center justify-between duration-75 transition hover:bg-lighter p-3 border-t border-lighter">
       <div class="flex items-center">
         <!-- avatar -->
-        <img :src="user.url" alt="imgage" class="rounded-full w-12 h-12 hover:opacity-80">
+        <img :src="user.url" alt="imgage" class="rounded-full w-12 h-12 filter hover:brightness-90">
         <!-- username and display name -->
         <div class="ml-2">
           <p class="font-semibold text-sm text-left leading-tight"> {{ user.displayname }} </p>

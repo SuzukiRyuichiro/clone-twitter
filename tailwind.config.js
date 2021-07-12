@@ -20,8 +20,13 @@ module.exports = {
         'lighter': '#E1E8ED',
         'lightest': '#F5F8FA',
       },
-      filter: ['hover', 'focus'],
     },
+  },
+  variants: {
+    extend: {
+      filter: ['hover'],
+      brightness: ['hover'],
+    }
   },
   plugins: [],
 }
