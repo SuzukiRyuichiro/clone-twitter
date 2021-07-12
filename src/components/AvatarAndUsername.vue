@@ -1,5 +1,5 @@
 <template>
-  <button class="flex items-center w-full justify-between hover:bg-lightest rounded-full duration-75 transition py-2 px-4">
+  <button class="flex items-center w-full justify-between hover:bg-lightest rounded-full duration-75 transition py-2 px-2 lg:px-4">
     <!-- avatar -->
     <img src="https://ca.slack-edge.com/T02NE0241-UHW0TQJ72-gcbf2e73747f-192" alt="avatar" class="w-10 h-10 rounded-full">
     <!-- username and display name -->

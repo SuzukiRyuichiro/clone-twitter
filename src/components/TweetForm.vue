@@ -29,10 +29,12 @@ export default {
 
   methods: {
     submitTweet() {
-      // send the text in text area to the parent (TweetsList)
-      this.$emit('tweet-submit', this.tweetContet);
-      // empty the input
-      this.tweetContet = '';
+      if (this.tweetContet !== '' && this.tweetContet.length <= 240) {
+        // send the text in text area to the parent (TweetsList)
+        this.$emit('tweet-submit', this.tweetContet);
+        // empty the input
+        this.tweetContet = '';
+      }
     }
   },
 
