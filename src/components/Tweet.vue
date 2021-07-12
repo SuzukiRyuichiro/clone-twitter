@@ -15,7 +15,7 @@
         </div>
       </div>
       <!-- content -->
-      <div class="text-left">
+      <div class="text-left whitespace-pre-wrap">
         {{ tweet.content }}
       </div>
       <!-- icons for comment, retweet, etc -->

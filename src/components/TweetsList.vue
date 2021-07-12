@@ -57,7 +57,7 @@ export default {
           username: '@dmbf29',
           avatarUrl: 'https://ca.slack-edge.com/T02NE0241-U4APKLFLM-da0b004a3774-51',
           time: '20m',
-          content: 'Remember, remember, the Fifth of November Gunpowder treason and plot I see no reason why gunpowder treason Should ever be forgot',
+          content: 'Remember, remember, the Fifth of November\nGunpowder treason and plot\nI see no reason why gunpowder treason\nShould ever be forgot',
           commentCount: 10,
           retweetCount: 3,
           favCount: 30,
