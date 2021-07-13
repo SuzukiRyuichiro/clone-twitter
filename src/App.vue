@@ -22,6 +22,7 @@
       TweetsList,
       SidebarColumn,
     },
+
     data() {
       return {
 
